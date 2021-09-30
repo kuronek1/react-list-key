@@ -16,7 +16,7 @@ class PhoneList extends Component {
 
         const arrayJSX = this.phoneList.map((value) => {
             const elemJSX = (
-                <li>{value}</li>
+                <li key={value}>{value}</li>
             );
             return elemJSX;
         });
